@@ -1,0 +1,247 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   background-image: url("../imagens/header.jpg");
+}
+
+body {
+   background-color: #800000;
+}
+
+.titulo {
+   max-height: 100px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.titulo2 {
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-height: 80px;
+}
+
+.menu ul {
+   align-items: center;
+   font-weight: bold;
+   text-transform: uppercase;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+}
+
+.menu li {
+   float: left;
+   border-right: 1px solid white;
+}
+
+.menu li a {
+   display: block;
+   color: #808080;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+.menu li a:hover {
+   background-color: white;
+   color: red;
+}
+
+.menu .active {
+   color: white;
+   background-color: #800000;
+}
+
+body {
+   background-image: url('../imagens/background.jpg');
+   background-size: cover;
+   backdrop-filter: blur(3px);
+}
+
+main, footer{
+   margin: 20px;
+}
+
+footer {
+   text-align: center;
+}
+
+main h2 {
+   color: white;
+}
+
+
+.div-titulo, .div-rodape{
+   padding: 10px;
+   background: rgba(255, 87, 87, 0.3);
+}
+
+/*ao invés do opacity, foi utilizado o rgba, com o objetivo de diminuir a opacidade apenas do fundo, sem alterar o conteúdo*/
+.div-fundo {
+   padding: 25px;
+   background: rgba(255, 0, 0, 0.3);
+}
+
+h1 {
+   color: white;
+}
+
+h4{
+   color: white;
+}
+
+.row {
+   flex: content;
+   text-align: left;
+}
+
+.poster {
+   max-height: 300px;
+}
+
+.imGira {
+   background-color: transparent;
+   width: 300px;
+   height: 350px;
+   perspective: 1000px; 
+}
+
+.flip-box-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+.imGira:hover .flip-box-inner {
+   transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}   
+
+.flip-box-back {
+   color: white;
+   transform: rotateY(180deg);
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+}
+
+.center {
+   justify-content: center;
+   text-align: center;
+}
+
+/*efeito diferentão: desfoque em imagens através do filter: blur() */
+.blur {
+   position: relative;
+   filter: blur(2px);   
+}
+
+.overlay {
+   font-weight: bold;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+}
+
+.text-block{
+   background: rgba(255, 255, 255, 0.5);
+   padding: 10px;
+}
+
+p .midia{
+   margin-bottom: 5px;
+   color: black;
+}
+
+.obs {
+   font-size: 10px;
+   text-transform: lowercase;
+   font-style: italic;
+}
+
+.video{
+   text-align: center;
+}
+
+.red {
+   color: #ff2b2b;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.mb {
+   margin-bottom: 20px;
+}
+
+.menu, .historia p {
+   color: white;
+}
+
+.historia p {
+   font-size: 20px;
+}
+
+mr {
+   margin-right: 20px;
+}
+
+ml {
+   margin-left: 20px;
+}
+
+pt {
+   align-items: center;
+}
+
+.img-decoration{
+   border-radius: 50%;
+   max-height: 200px;
+}
+
+.img-decoration2{
+   justify-self: center;
+   max-height: 200px;
+   margin-right: 50px;
+}
+
+.img-space {
+   text-align: center;
+   width: 100%;
+}
+
+.poderes li {
+   color: white;
+   margin-bottom: 10px;
+}
+
+.poderes p {
+   margin-bottom: 20px;
+   
+}
