@@ -6,6 +6,7 @@
 
 header {
    background-image: url("../imagens/header.jpg");
+   
 }
 
 body {
@@ -98,9 +99,9 @@ h4{
    color: white;
 }
 
-.row {
-   flex: content;
-   text-align: left;
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr auto;
 }
 
 .poster {
@@ -233,7 +234,7 @@ pt {
 
 .img-space {
    text-align: center;
-   width: 100%;
+   position: absolute;
 }
 
 .poderes li {
