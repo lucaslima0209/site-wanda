@@ -6,7 +6,8 @@
 
 header {
    background-image: url("../imagens/header.jpg");
-   
+   background-size: 100%;
+   text-align: center;
 }
 
 body {
@@ -14,9 +15,9 @@ body {
 }
 
 .titulo {
-   max-height: 100px;
-   margin-top: 50px;
-   margin-bottom: 50px;
+   width: 100%;
+   max-width: 1000px;
+   margin-left: 10px;
 }
 
 .titulo2 {
@@ -24,6 +25,9 @@ body {
    display: block;
    margin-left: auto;
    margin-right: auto;
+   width: 70%;
+   height: 70%;
+   max-width: 300px;
    max-height: 80px;
 }
 
@@ -99,9 +103,27 @@ h4{
    color: white;
 }
 
-.container {
+.index {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr auto;
+   row-gap: 50px;
+   grid-template-columns: repeat(auto-fit, 26rem);
+}
+
+
+.poderes {
+   display: grid;
+   column-gap: 15px;
+   margin-top: 15px;
+   row-gap: 15px;
+   grid-template-columns: repeat(auto-fit, 25rem);
+
+}
+
+
+.filmes {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(auto-fit, 17rem);
 }
 
 .poster {
@@ -138,11 +160,6 @@ h4{
 .flip-box-back {
    color: white;
    transform: rotateY(180deg);
-}
-
-.row {
-   display: flex;
-   flex-direction: row;
 }
 
 .center {
@@ -209,14 +226,6 @@ p .midia{
    font-size: 20px;
 }
 
-mr {
-   margin-right: 20px;
-}
-
-ml {
-   margin-left: 20px;
-}
-
 pt {
    align-items: center;
 }
@@ -240,9 +249,4 @@ pt {
 .poderes li {
    color: white;
    margin-bottom: 10px;
-}
-
-.poderes p {
-   margin-bottom: 20px;
-   
 }
